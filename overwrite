@@ -1,0 +1,11 @@
+Leve0 ssh遠端到系統
+1.ssh url 
+
+leve1 查看文件檔
+1.ls 2.cat or mroe
+
+level2 查看特殊檔名
+1. ./filename
+
+level3 密碼存放在spaces in this filename 如何查看
+1.ls 2.cat./spaces in this filename
