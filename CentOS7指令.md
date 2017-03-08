@@ -1,4 +1,4 @@
-# -
+# Centos
 firewall-cmd --list-all ##檢查是否有防火牆 
 
 netstat -tunlp ##檢測網路相關
