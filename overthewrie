@@ -9,3 +9,13 @@ level2 查看特殊檔名
 
 level3 密碼存放在spaces in this filename 如何查看
 1.ls 2.cat./spaces in this filename
+
+level4
+find inhere/*
+more /inhere/-file0X
+
+Level5 
+find -size 字節 -可讀性
+
+Level6
+find / -user bandit7 -group bandit6 -size 33c -type f 2>/dev/null ##2>/dev/null 2為錯誤 *null為Linux黑洞,將資料dump進去不會print到螢幕上。
