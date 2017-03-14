@@ -1,0 +1,16 @@
+ubuntu16.04 install phpmyadmin 
+
+需求套件安裝
+apt-get install apache2 php7.0 mariadb-server php-mbstring php-gettext 
+libapache2-mod-php7.0 ##phpmyadmin若在apache2上顯示程式碼可能該套件未安裝
+
+ cd /var/www/html/phpmyadmin
+ cp config.sample.inc.php config.inc.php
+ vim config.inc.php
+ 
+ sudo mysql
+ use mysql 
+ UPDATE user SET Password='PASSWORD' where USER='root';
+ GRANT all ON *.* TO root@localhost IDENTIFIED BY 'password'
+ FLUSH PRIVILEGES; 
+ 
