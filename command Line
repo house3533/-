@@ -1,0 +1,4 @@
+cat /proc/cpuinfo ##cpu訊息
+cat /proc/meminfo ##記憶體訊息
+cat /proc/cpuinfo "modename"
+cat /proc/cpuinfo | grep "modename"
