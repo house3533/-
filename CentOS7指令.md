@@ -18,3 +18,5 @@ man XXX ##指令目錄
 ls -a ##可顯示hidden檔案
 
 find -readable -size 1033c ! -executable ##size為字節 ##readable可讀性
+
+yumdownloder 套件下載器
