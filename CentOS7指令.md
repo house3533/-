@@ -20,3 +20,8 @@ ls -a ##可顯示hidden檔案
 find -readable -size 1033c ! -executable ##size為字節 ##readable可讀性
 
 yumdownloder 套件下載器
+
+iptables 轉port command
+-A PREROUTING -p tcp -m tcp --dport 443 -j REDIRECT --to-ports 8443
+-A OUTPUT -d 127.0.0.1/32 -p tcp -m tcp --dport 443 -j REDIRECT --to-ports 8443
+-A OUTPUT -d 127.0.0.1/32 -p tcp -m tcp --dport 443 -j REDIRECT --to-ports 8443
