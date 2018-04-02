@@ -25,3 +25,7 @@ iptables 轉port command
 -A PREROUTING -p tcp -m tcp --dport 443 -j REDIRECT --to-ports 8443
 -A OUTPUT -d 127.0.0.1/32 -p tcp -m tcp --dport 443 -j REDIRECT --to-ports 8443
 -A OUTPUT -d 127.0.0.1/32 -p tcp -m tcp --dport 443 -j REDIRECT --to-ports 8443
+
+iptables 限定ippo
+-A INPUT -s 192.168.217.8 -p tcp -m multiport --dports 80,443,22 -j ACCEPT
+-A INPUT -s 192.168.217.8 -j DROP
