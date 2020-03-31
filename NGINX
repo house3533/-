@@ -1,0 +1,13 @@
+NGINX 會同時維護兩個版本 Mainline(主線)及stable(穩定)
+MainLine會新增功能更新修復bug，stable只修復bug
+
+-NGINX模組概念
+由主程序及各種模組所構成，功能、設定檔中的指令和變數都是模組提供，A的設定檔複製到B不一定可以使用
+分為靜態模組、動態模組
+
+-NGINX 和 NGINX PLUS 分別為社群開發版本及商業付費版本
+
+-/etc/nginx為主要設定檔，/etc/nginx/conf.d 為次要的設定檔 /var/log/nginx/ log記錄檔
+主要設定檔為全域設定
+次要的設定檔為請求監聽、處理規則、後端server配置
+log記錄檔分error.log及access.log 每次請求紀錄、格是可設定
